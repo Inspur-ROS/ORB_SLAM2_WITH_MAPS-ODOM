@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>ORB_SLAM2_With_MAPS-ODOM</name>
+  <name>orb_slam2_with_maps-odom</name>
   <version>0.0.1</version>
   <description> This project is based on ORB_SLAM2 generate and release pointcloud data, 
     octree data and 2D grid occupy map. And map saving and overloading are added.
