@@ -18,7 +18,7 @@ find_package(catkin REQUIRED COMPONENTS
   tf
 )
 
-
+find_package(Boost COMPONENTS filesystem system REQUIRED)
 find_package(OpenCV 3.0 QUIET)
 find_package(octomap REQUIRED)
 find_package(Eigen3 3.1.0 REQUIRED)
@@ -35,6 +35,7 @@ ${PROJECT_SOURCE_DIR}
 ${PROJECT_SOURCE_DIR}/include
 ${Pangolin_INCLUDE_DIRS}
 ${catkin_INCLUDE_DIRS}
+${Boost_INCLUDE_DIRS}
 )
 
 set(LIBS 
@@ -45,6 +46,7 @@ ${PROJECT_SOURCE_DIR}/Thirdparty/DBoW2/lib/libDBoW2.so
 ${PROJECT_SOURCE_DIR}/Thirdparty/g2o/lib/libg2o.so
 ${PROJECT_SOURCE_DIR}/lib/libORB_SLAM2.so
 ${OCTOMAP_LIBRARIES}
+${Boost_LIBRARIES} 
 )
 
 
