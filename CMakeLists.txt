@@ -14,6 +14,7 @@ find_package(catkin REQUIRED COMPONENTS
   move_base_msgs
   nav_msgs
   roscpp
+  cv_bridge
   std_msgs
   tf
 )
@@ -36,6 +37,7 @@ ${PROJECT_SOURCE_DIR}/include
 ${Pangolin_INCLUDE_DIRS}
 ${catkin_INCLUDE_DIRS}
 ${Boost_INCLUDE_DIRS}
+${PCL_INCLUDE_DIRS}
 )
 
 set(LIBS 
@@ -47,6 +49,7 @@ ${PROJECT_SOURCE_DIR}/Thirdparty/g2o/lib/libg2o.so
 ${PROJECT_SOURCE_DIR}/lib/libORB_SLAM2.so
 ${OCTOMAP_LIBRARIES}
 ${Boost_LIBRARIES} 
+${PCL_LIBRARIES} 
 )
 
 
